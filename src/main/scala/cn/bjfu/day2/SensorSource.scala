@@ -23,7 +23,7 @@ class SensorSource extends RichParallelSourceFunction[SensorReading]{
           //发送
           curFtemp.foreach(t=>ctx.collect(SensorReading(t._1,curTime,t._2)))
 
-          Thread.sleep(100)
+          Thread.sleep(500)
 
     }
   }
