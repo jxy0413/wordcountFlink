@@ -6,8 +6,6 @@ import org.apache.flink.streaming.api.TimeCharacteristic
 import org.apache.flink.streaming.api.scala._
 import org.apache.flink.streaming.api.windowing.time.Time
 
-
-
 object FileCEPExample {
   case class LoginEvent(userId:String,eventType:String,ip:String,envenTime:Long)
   def main(args: Array[String]): Unit = {
